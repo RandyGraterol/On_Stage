@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Galeria</title>
+	<link rel="stylesheet" type="text/css" href="/css/galeria.css">
+</head>
+<body>
+<header>
+	<h1>Galeria</h1>
+	<button>Volver</button>
+</header>
+<section>
+	
+      <% data.forEach(imagen =>{%>
+       <img class='imgGaleria' src="<%=dato%><%=imagen%>">
+      <% }); %>
+
+</section>
+</body>
+</html>
