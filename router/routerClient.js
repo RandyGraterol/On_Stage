@@ -2,9 +2,9 @@ const express = require('express');
 
 const router = express.Router();
 
-const {index,galeria} = require('../controllers/controllersClient.js'); 
+const {index,sonidoO} = require('../controllers/controllersClient.js'); 
 
 router.get('/',index);
-router.get('/galeria',galeria);
+router.get('/sonido',sonidoO);
 
 module.exports=router;

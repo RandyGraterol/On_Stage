@@ -1,3 +1,205 @@
-.imgGaleria{
-	width:20%;
+/* Móviles pequeños (320px - 374px) */
+@media (max-width: 374px) {
+	/* Aquí van tus estilos específicos para móviles pequeños */
+	/* Aquí van tus estilos específicos para móviles grandes */
+	
+}
+/* Móviles medianos (375px - 414px) */
+@media (min-width: 375px) and (max-width: 414px) {
+	/* Aquí van tus estilos específicos para móviles medianos */
+	/* Aquí van tus estilos específicos para móviles grandes */
+
+}
+/* Móviles grandes (415px - 599px)*/
+@media (min-width: 415px) and (max-width: 599px) {
+	/* Aquí van tus estilos específicos para móviles grandes */
+	
+	
+}
+/* Tabletas en orientación vertical (600px - 767px) */
+@media (min-width: 600px) and (max-width: 767px) {
+	/* Aquí van tus estilos específicos para tabletas en orientación vertical*/
+	/* Aquí van tus estilos específicos para móviles grandes */
+	body{
+	background:rgb(0,0,0);
+	color: white;
+}
+.container{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+	align-items: center;
+	gap:2rem;
+	padding-bottom: 5rem;
+}
+.container img{
+	width:30%;
+	height:60vh;
+}
+header{
+	display: flex;
+	justify-content:start;
+	align-items: start;
+	padding: 2rem;
+	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0)) 
+}
+header h1{
+	margin-left:2rem;
+	font-size:1.2rem;
+	max-width:40rem;
+}
+header a{
+	margin-top: .9rem;
+	margin-left: 3rem;
+	width:8%;
+	height:20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-size: .6rem;
+	background: rgb(0, 41, 55);
+}
+}
+/* Tabletas en orientación horizontal (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+/* Aquí van tus estilos específicos para móviles grandes */
+body{
+	background:rgb(0,0,0);
+	color: white;
+}
+.container{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+	align-items: center;
+	gap:2rem;
+	padding-bottom: 5rem;
+}
+.container img{
+	width:25%;
+	height:55vh;
+}
+header{
+	display: flex;
+	justify-content:start;
+	align-items: start;
+	padding: 2rem;
+	border:5px solid green;
+	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0)) 
+}
+header h1{
+	margin-left:2rem;
+	font-size:2rem;
+	max-width:40rem;
+}
+header a{
+	margin-top: 1.6rem;
+	margin-left: 3rem;
+	width:8%;
+	height:30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	background: rgb(0, 41, 55);
+}
+}
+/* Tabletas grandes o dispositivos pequeños de escritorio (1025px - 1279px) */
+@media (min-width: 1025px) and (max-width: 1279px) {
+	/* Aquí van tus estilos específicos para tabletas grandes o dispositivos pequeños de escritorio */
+body{
+	background:rgb(0,0,0);
+	color: white;
+}
+.container{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+	align-items: center;
+	gap:2rem;
+	padding-bottom: 5rem;
+}
+.container img{
+	width:22%;
+	height:50vh;
+}
+header{
+	display: flex;
+	justify-content:start;
+	align-items: start;
+	padding: 2rem;
+	border:5px solid violet;
+	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0)) 
+}
+header h1{
+	margin-left:2rem;
+	font-size:2.3rem;
+}
+header a{
+	margin-top: 1.7rem;
+	margin-left: 3rem;
+	width:8%;
+	height:40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	background: rgb(0, 41, 55);
+}
+}
+/* Dispositivos de pantalla grande (1280px en adelante) */
+@media (min-width: 1280px) {
+	/* Aquí van tus estilos específicos para dispositivos de pantalla grande */
+body{
+	background:rgb(0,0,0);
+	color: white;
+}
+.container{
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-evenly;
+	align-items: center;
+	gap:2rem;
+	padding-bottom: 5rem;
+}
+.container img{
+	width:22%;
+	height:50vh;
+}
+header{
+	display: flex;
+	justify-content:start;
+	align-items: start;
+	padding: 2rem;
+	border:5px solid blue;
+	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0)) 
+}
+header h1{
+	margin-left:2rem;
+	font-size:2.3rem;
+}
+header a{
+	margin-top: 1.7rem;
+	margin-left: 3rem;
+	width:8%;
+	height:40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	background: rgb(0, 41, 55);
+}
+
 }
