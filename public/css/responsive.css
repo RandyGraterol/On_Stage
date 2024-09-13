@@ -35,7 +35,267 @@
 /* Tabletas grandes o dispositivos pequeños de escritorio (1025px - 1279px) */
 @media (min-width: 1025px) and (max-width: 1279px) {
 	/* Aquí van tus estilos específicos para tabletas grandes o dispositivos pequeños de escritorio */
-	
+	nav{
+		display: flex;
+		justify-content:end;
+		align-items: end;
+		padding-top:2rem;
+		padding-right:2rem;
+	}
+	nav img{
+		width:15%;
+	}
+	header{
+		width:100%;
+		height:100vh;
+		background-image:url('/pool party/headers.jpg');
+		background-repeat: no-repeat;
+		background-position:left bottom;
+		background-size: cover;
+
+	}
+	.textoHeaders{
+		color:white;
+		font-weight: bolder;
+		font-size:1.5rem;
+		width:100%;
+		height:30rem;
+		display:flex;
+		flex-direction: column;
+		justify-content:center;
+		align-content:center;
+		gap:1.5rem;
+		margin-top: 2rem;
+	}
+	.textoHeaders p,h1{
+		display:flex;
+		justify-content: start;
+		align-items:start;
+		margin-left: 2rem;
+		width:40%;
+		height:auto;
+	}
+	.queEs{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:2.5rem;
+		width:100%;
+		height:60vh;
+		background:rgb(0,0,0);
+	}
+	.queEs p{
+		width:95%;
+		font-size:1.8rem;
+	}
+	h2{
+		width:95%;
+		font-size:2.5rem;	
+	}
+	.sonidoFlores{
+		width:100%;
+		height:142vh;
+		background:rgb(0,0,0);
+		
+	}
+	.sonidoFlores img{
+		background-repeat:no-repeat;
+		background-size: cover;
+		width:100%;
+	}
+	.iluminacion{
+		display: flex;
+		justify-content:start;
+		align-items: center;
+		background:rgb(0,0,0);
+		width:100%;
+		height:30vh;
+	}
+	.iluminacion h2{
+		width:25%;
+		text-align: center;
+		margin-left:1rem;
+	}
+	.iluminacion button{
+		width:10%;
+		font-size:1.3rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		margin-left: 1rem;
+		padding: .6rem;
+	}
+	.bodas{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		width:100%;
+		height:143vh;
+	}
+	.bodas img{
+		width:50%;
+		height:auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.pantallas-led , .estructura , .techo , .tarimA{
+		width:100%;
+		height:845px;
+	}
+	.pantallas-led img , .estructura img , .techo img , .tarimA img{
+		background-position:center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width:100%;
+		height:auto;
+	}
+	.tarima{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:15rem;
+	}
+	.tarima h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.bodaS{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:17rem;
+	}
+	.poolParty{
+		margin-top:-2rem;
+	}
+	.conciertos{
+		margin-top:-5rem;
+	}
+	.videos{
+		margin-top:-10rem;
+	}
+	.poolParty h2{
+		color:rgb(153, 193, 218);
+	}
+	.bodaS h2{
+	display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.sonido-button{
+		display: flex;
+		justify-content:start;
+		width:100%;
+	}
+	.sonido-button h2{
+		width:13%;
+		text-align: center;
+		margin-left:1rem;
+	}
+	.sonido-button button{
+		width:10%;
+		font-size:1.3rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		margin-left: 1.5rem;
+	}
+	.sonido-button button:hover , .iluminacion button:hover{
+		background:rgba(0,41,55,.3);
+		transform:translateY(-4px);
+	}
+	.bodasContainer{
+		display:flex;
+		justify-content:center;
+		align-items:start;
+		gap:5rem;
+		height:140vh;
+		margin-bottom:3rem;
+		background:rgb(0,0,0);
+	}
+	.conciertosContainer{
+	    display:flex;
+		justify-content:center;
+		align-items:start;
+		gap:1rem;
+		height:140vh;
+		margin-bottom:3rem;
+		background:rgb(0,0,0);	
+	}
+	.conciertosContainer img{
+        width:48%;
+		height:120vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.bodasContainer img{
+		width:40%;
+		height:120vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.video{
+		background: rgb(0, 0, 0);
+		margin-top:-1rem;
+		width: 100%;
+		height:auto;
+		display: flex;
+		flex-wrap: wrap;
+		gap:2rem;
+		padding-bottom:8rem;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.contactanos{
+
+	}
+	.video video{
+		width:30%;
+		margin-top: 2rem;
+		border:7px solid rgb(0, 12, 16);
+	}
+	footer{
+		background:rgb(0,0,0);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:2rem;
+		color:white;
+		width: 100%;
+		padding-bottom: 2rem;
+	}
+	footer div:nth-child(1){
+		width: 100%;
+		display: flex;
+		justify-content: start;
+		gap:2rem;
+	}
+	footer div:nth-child(2){
+		width: 100%;
+		text-align: center;
+		font-size:1.2rem;
+		font-weight: bold;
+	}
+	.imgRedSocial{
+		width:30%;
+		background-size: cover;
+	}
+	a{ 
+	width:10%;
+	}
+	a:nth-child(1){
+		margin-left:5rem;
+	}
 }
 /* Dispositivos de pantalla grande (1280px en adelante) */
 @media (min-width: 1280px) {
