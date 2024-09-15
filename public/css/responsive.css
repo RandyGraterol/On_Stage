@@ -5,31 +5,1612 @@
 @media (max-width: 374px) {
 	/* Aquí van tus estilos específicos para móviles pequeños */
 	/* Aquí van tus estilos específicos para móviles grandes */
+	nav{
+		display: flex;
+		justify-content:end;
+		align-items: center;
+		width:100%;
+		
+	}
+	nav img{
+		width:30%;
+	}
+	.iframeResponsive{
+		width:80%;
+		height:30%;
+	}
+	header{
+		width:100%;
+		height:100vh;
+		background-image:url('/pool party/headers.jpg');
+		background-repeat: no-repeat;
+		background-position:left bottom;
+		background-size: cover;
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		gap:2rem;
+	}
+	.textoHeaders{
+		color:white;
+		font-weight: bolder;
+		font-size:.7rem;
+		width:100%;
+		height:auto;
+		display:flex;
+		flex-direction: column;
+		justify-content:center;
+		align-content:center;
+		gap:1.5rem;
+		margin-top:0;
+		padding:1rem;
+	}
+	.textoHeaders p,h1{
+		display:flex;
+		justify-content: start;
+		align-items:start;
+		width:100%;
+		height:auto;
+		background: rgba(0,0,0,.2);
+		backdrop-filter:blur(1px);
+		
+	}
+	.queEs{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:1rem;
+		width:100%;
+		height:auto;
+		margin-top:0;
+		background:rgb(0,0,0);
+		padding:0;
+	}
+
+	.queEs h2 , .queEs p,.queEs .iluminacion{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		padding:1rem;
+		width: 90%;
+		font-size: 1rem;
+	}
+	.queEs h2{
+		font-size: 1.4rem;
+		text-align:center;
+
+	}
+	.queEs p{
+		margin-left:0 !important;
+	}
+	h2{
+		width:95%;
+		font-size:2rem;	
+	}
+	.sonidoFlores{
+		width:100%;
+		height:100%;
+		background:rgb(0,0,0);
+		
+	}
+	.sonidoFlores img{
+		background-repeat:no-repeat;
+		background-size: cover;
+		width:100%;
+	}
+	.iluminacion{
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items: center;
+		background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+		width:100%;
+		margin-top:0;
+		margin-left:0;
+		height:30vh;
+
+
+	}
+	.iluminacion h2{
+		width:auto;
+		padding:.1rem;
+		text-align: center;
+		font-size: 1.3rem;
+	}
+	.iluminacion a{
+		width:auto;
+		font-size:.9rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		padding:.4rem 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+	}
+	.bodas{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		gap:1rem;
+		width:100%;
+		height:100%;
+		padding:1rem;
+		background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+	}
+	.bodas img{
+		width:100%;
+		height:60vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.pantallas-led , .estructura , .techo , .tarimA{
+		width:100%;
+		height:50vh;
+		background-position: center center;
+		padding:1rem;
+		background:-webkit-radial-gradient(center,circle,rgb(0,0,0),rgb(0, 12, 16));
+	}
+	.pantallas-led img , .estructura img , .techo img , .tarimA img{
+		background-position:center center;
+		background-size:cover;
+		background-repeat:no-repeat;
+		width:100%;
+		height:100%;
+	}
+	.tarima{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:0;
+	}
+	.tarima h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.bodaS{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:9rem;
+	}
+	.poolParty{
+		margin-top:0;
+	}
+	.conciertos{
+		margin-top:0;
+	}
+	.videos{
+		margin-top:0;
+	}
+	.poolParty h2{
+		color:rgb(153, 193, 218);
+	}
+	.bodaS h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.sonido-button{
+		display: flex;
+		justify-content:start;
+		width:100%;
+		margin-left:0 !important;
+		padding:2rem;
+	}
+	.sonido-button h2{
+		width:auto;
+		display:flex;
+		text-align:left;
+
+	}
+	.sonido-button a{
+		width:10%;
+		font-size:1.3rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		height: 8vh;
+	}
+	.sonido-button a:hover , .iluminacion a:hover{
+		background:rgba(0,41,55,.3);
+		transform:translateY(-4px);
+	}
+	.bodasContainer{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		align-items:center;
+		gap:1rem;
+		height:auto;
+		background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+		padding:1rem;
+	}
+	.conciertosContainer{
+		display:flex;
+		justify-content:center;
+		align-items:start;
+		gap:1rem;
+		height:auto;
+		
+		background:rgb(0,0,0);	
+	}
+	.conciertosContainer img{
+		width:48%;
+		height:120vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.bodasContainer img{
+		width:100%;
+		height:80vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.video{
+		background:rgb(0, 0, 0);
+		margin-top:0;
+		width: 100%;
+		height:auto;
+		display: flex;
+		flex-wrap: wrap;
+		gap:2rem;
+		padding:2rem;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.contactanos{
+
+	}
+	.video video{
+		width:30%;
+		margin-top: 2rem;
+
+	}
+	footer{
+		background:rgb(0,0,0);
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		color:white;
+		width: 100%;
+		padding-bottom: 2rem;
+
+
+	}
 	
+	.imgRedSocial{
+		width:30%;
+		background-size: cover;
+	}
+	a{ 
+		width:20%;
+	}
+	a:nth-child(1){
+		margin-left:5rem;
+	}
+	.estructurA , .techO{
+		margin-top:0 !important;
+	}
+	.redess{
+		width:100%;
+		height: auto;
+		display: flex !important;
+		justify-content: center !important;
+		align-items:center !important;
+		gap:1rem;
+	}
+	.redess div{
+		margin:0 !important;
+	}
+	.redess div a{
+		width: 100%;
+		height:auto;
+		margin:0;
+
+	}
+	.redess div a img{
+		width:30px;
+		height:auto;
+		margin:0 !important;
+	}
+
 }
 /* Móviles medianos (375px - 414px) */
 @media (min-width: 375px) and (max-width: 414px) {
 	/* Aquí van tus estilos específicos para móviles medianos */
 	/* Aquí van tus estilos específicos para móviles grandes */
+	nav{
+		display: flex;
+		justify-content:end;
+		align-items: center;
+		width:100%;
+	}
+	nav img{
+		width:30%;
+	}
+	.iframeResponsive{
+		width:80%;
+		height:30%;
+	}
+	header{
+		width:100%;
+		height:100vh;
+		background-image:url('/pool party/headers.jpg');
+		background-repeat: no-repeat;
+		background-position:left bottom;
+		background-size: cover;
+		display: flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items: center;
+		gap:2rem;
+	}
+	.textoHeaders{
+		color:white;
+		font-weight: bolder;
+		font-size:.7rem;
+		width:100%;
+		height:auto;
+		display:flex;
+		flex-direction: column;
+		justify-content:center;
+		align-content:center;
+		gap:1.5rem;
+		margin-top:0;
+		padding:1rem;
+	}
+	.textoHeaders p,h1{
+		display:flex;
+		justify-content: start;
+		align-items:start;
+		width:100%;
+		height:auto;
+		background: rgba(0,0,0,.2);
+		backdrop-filter:blur(1px);	
+	}
+	.queEs{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:1rem;
+		width:100%;
+		height:auto;
+		margin-top:0;
+		background:rgb(0,0,0);
+		padding:0;
+	}
 
+	.queEs h2 , .queEs p,.queEs .iluminacion{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		padding:1rem;
+		width: 90%;
+		font-size: 1rem;
+	}
+	.queEs h2{
+		font-size: 1.4rem;
+
+	}
+	.queEs p{
+		margin-left:0 !important;
+	}
+	h2{
+		width:95%;
+		font-size:2rem;	
+	}
+	.sonidoFlores{
+		width:100%;
+		height:100%;
+		background:rgb(0,0,0);
+		
+	}
+	.sonidoFlores img{
+		background-repeat:no-repeat;
+		background-size: cover;
+		width:100%;
+	}
+	.iluminacion{
+		display: flex;
+		justify-content:start;
+		align-items: center;
+		background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+		width:100%;
+		margin-top:0;
+		height:30vh;
+		padding-left:2rem;
+	}
+	.iluminacion h2{
+		width:auto;
+		padding:1rem;
+		text-align: center;
+		margin-left:1rem;
+		font-size: 1.3rem;
+	}
+	.iluminacion a{
+		width:auto;
+		font-size:.9rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		margin-left: 1rem;
+		padding:.4rem 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+	}
+	.bodas{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		gap:1rem;
+		width:100%;
+		height:100%;
+		padding:1rem;
+		background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+	}
+	.bodas img{
+		width:100%;
+		height:80vh;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.pantallas-led , .estructura , .techo , .tarimA{
+		width:100%;
+		height:50vh;
+		background-position: center center;
+		padding:1rem;
+		background:-webkit-radial-gradient(center,circle,rgb(0,0,0),rgb(0, 12, 16));
+	}
+	.pantallas-led img , .estructura img , .techo img , .tarimA img{
+		background-position:center center;
+		background-size:cover;
+		background-repeat:no-repeat;
+		width:100%;
+		height:100%;
+	}
+	.tarima{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:0;
+	}
+	.tarima h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.bodaS{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:9rem;
+	}
+	.poolParty{
+		margin-top:0;
+	}
+	.conciertos{
+		margin-top:0;
+	}
+	.videos{
+		margin-top:0;
+	}
+	.poolParty h2{
+		color:rgb(153, 193, 218);
+	}
+	.bodaS h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.sonido-button{
+		display: flex;
+		justify-content:start;
+		width:100%;
+		margin-left:0 !important;
+		padding:2rem;
+	}
+	.sonido-button h2{
+		width:auto;
+		display:flex;
+		text-align:left;
+
+	}
+	.sonido-button a{
+		width:10%;
+		font-size:1.3rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		height: 8vh;
+	}
+	.sonido-button a:hover , .iluminacion a:hover{
+		background:rgba(0,41,55,.3);
+		transform:translateY(-4px);
+	}
+	.bodasContainer{
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		align-items:center;
+		gap:1rem;
+		height:auto;
+		background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+		padding:1rem;
+	}
+	.conciertosContainer{
+		display:flex;
+		justify-content:center;
+		align-items:start;
+		gap:1rem;
+		height:auto;
+		
+		background:rgb(0,0,0);	
+	}
+	.conciertosContainer img{
+		width:48%;
+		height:120vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.bodasContainer img{
+		width:100%;
+		height:90vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.video{
+		background:rgb(0, 0, 0);
+		margin-top:0;
+		width: 100%;
+		height:auto;
+		display: flex;
+		flex-wrap: wrap;
+		gap:2rem;
+		padding:2rem;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.contactanos{
+
+	}
+	.video video{
+		width:30%;
+		margin-top: 2rem;
+
+	}
+	footer{
+		background:rgb(0,0,0);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:2rem;
+		color:white;
+		width: 100%;
+		padding-bottom: 2rem;
+
+	}
+	.redess{
+		width:100%;
+		height: auto;
+		display: flex !important;
+		justify-content: center !important;
+		align-items:center !important;
+		gap:1rem;
+	}
+	.redess div{
+		margin:0 !important;
+	}
+	.redess div a{
+		width: 100%;
+		height:auto;
+		margin:0;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+
+	}
+	.imgRedSocial{
+		width:20%;
+		background-size: cover;
+	}
+	a{ 
+		width:20%;
+	}
+	a:nth-child(1){
+		margin-left:5rem;
+	}
+	.estructurA , .techO{
+		margin-top:0 !important;
+	}
+		
 }
 /* Móviles grandes (415px - 599px)*/
 @media (min-width: 415px) and (max-width: 599px) {
 	/* Aquí van tus estilos específicos para móviles grandes */
-	
-	
+	nav{
+		display: flex;
+		justify-content:end;
+		align-items: end;
+		padding-top:2rem;
+		padding-right:2rem;
+	}
+	nav img{
+		width:25%;
+	}
+	.iframeResponsive{
+		width:45%;
+		height:30%;
+	}
+	header{
+		width:100%;
+		height:100%;
+		background-image:url('/pool party/headers.jpg');
+		background-repeat: no-repeat;
+		background-position:left bottom;
+		background-size: cover;
+	}
+	.textoHeaders{
+		color:white;
+		font-weight: bolder;
+		font-size:.9rem;
+		width:100%;
+		height:60vh;
+		display:flex;
+		flex-direction: column;
+		justify-content:center;
+		align-content:center;
+		gap:1.5rem;
+		margin-top:0;
+		padding:5rem;
+	}
+	.textoHeaders p,h1{
+		display:flex;
+		justify-content: start;
+		align-items:start;
+		width:100%;
+		height:auto;
+		background: rgba(0,0,0,.2);
+		backdrop-filter:blur(1px);
+		margin-left:-3rem;
+		
+	}
+	.queEs{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:1rem;
+		width:100%;
+		height:auto;
+		margin-top:0;
+		background:rgb(0,0,0);
+		padding:0;
+	}
+
+	.queEs h2 , .queEs p,.queEs .iluminacion{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		padding:1rem;
+		width: 90%;
+		font-size: 1rem;
+	}
+	.queEs h2{
+		font-size: 1.4rem;
+
+	}
+	.queEs p{
+		margin-left:0 !important;
+	}
+	h2{
+		width:95%;
+		font-size:2rem;	
+	}
+	.sonidoFlores{
+		width:100%;
+		height:100%;
+		background:rgb(0,0,0);
+		
+	}
+	.sonidoFlores img{
+		background-repeat:no-repeat;
+		background-size: cover;
+		width:100%;
+	}
+	.iluminacion{
+		display: flex;
+		justify-content:start;
+		align-items: center;
+		background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+		width:100%;
+		margin-top:0;
+		height:30vh;
+		padding-left:2rem;
+	}
+	.iluminacion h2{
+		width:auto;
+		padding:1rem;
+		text-align: center;
+		margin-left:1rem;
+		font-size: 1.3rem;
+	}
+	.iluminacion a{
+		width:auto;
+		font-size:.9rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		margin-left: 1rem;
+		padding:.4rem 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+	}
+	.bodas{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		width:100%;
+		height:100%;
+	}
+	.bodas img{
+		width:50%;
+		height:auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.pantallas-led , .estructura , .techo , .tarimA{
+		width:100%;
+		height:50vh;
+		background-position: center center;
+		padding:1rem;
+		background:-webkit-radial-gradient(center,circle,rgb(0,0,0),rgb(0, 12, 16));
+	}
+	.pantallas-led img , .estructura img , .techo img , .tarimA img{
+		background-position:center center;
+		background-size:cover;
+		background-repeat:no-repeat;
+		width:100%;
+		height:100%;
+	}
+	.tarima{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:0;
+	}
+	.tarima h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.bodaS{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:9rem;
+	}
+	.poolParty{
+		margin-top:0;
+	}
+	.conciertos{
+		margin-top:0;
+	}
+	.videos{
+		margin-top:0;
+	}
+	.poolParty h2{
+		color:rgb(153, 193, 218);
+	}
+	.bodaS h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.sonido-button{
+		display: flex;
+		justify-content:start;
+		width:100%;
+		margin-left:0 !important;
+		padding:2rem;
+	}
+	.sonido-button h2{
+		width:auto;
+		display:flex;
+		text-align:left;
+
+	}
+	.sonido-button a{
+		width:10%;
+		font-size:1.3rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		height: 8vh;
+	}
+	.sonido-button a:hover , .iluminacion a:hover{
+		background:rgba(0,41,55,.3);
+		transform:translateY(-4px);
+	}
+	.bodasContainer{
+		display:flex;
+		justify-content:space-between;
+		align-items:center;
+		gap:1rem;
+		height:auto;
+		background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+		padding:1rem;
+	}
+	.conciertosContainer{
+		display:flex;
+		justify-content:center;
+		align-items:start;
+		gap:1rem;
+		height:auto;
+		
+		background:rgb(0,0,0);	
+	}
+	.conciertosContainer img{
+		width:48%;
+		height:120vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.bodasContainer img{
+		width:50%;
+		height:60vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.video{
+		background:rgb(0, 0, 0);
+		margin-top:0;
+		width: 100%;
+		height:auto;
+		display: flex;
+		flex-wrap: wrap;
+		gap:2rem;
+		padding:2rem;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.contactanos{
+
+	}
+	.video video{
+		width:30%;
+		margin-top: 2rem;
+	}
+	footer{
+		background:rgb(0,0,0);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:2rem;
+		color:white;
+		width: 100%;
+		padding-bottom: 2rem;
+
+
+	}
+	.redess{
+		width:100%;
+		height: auto;
+		display: flex !important;
+		justify-content: center !important;
+		align-items:center !important;
+		gap:1rem;
+	}
+	.redess div{
+		margin:0 !important;
+	}
+	.redess div a{
+		width: 100%;
+		height:auto;
+		margin:0;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+
+	}
+	.imgRedSocial{
+		width:15%;
+		background-size: cover;
+	}
+	a{ 
+		width:20%;
+	}
+	a:nth-child(1){
+		margin-left:5rem;
+	}
+	.estructurA , .techO{
+		margin-top:0 !important;
+	}
+		
 }
 /* Tabletas en orientación vertical (600px - 767px) */
 @media (min-width: 600px) and (max-width: 767px) {
 	/* Aquí van tus estilos específicos para tabletas en orientación vertical*/
 	/* Aquí van tus estilos específicos para móviles grandes */
-	
+	nav{
+		display: flex;
+		justify-content:end;
+		align-items: end;
+		padding-top:2rem;
+		padding-right:2rem;
+	}
+	nav img{
+		width:20%;
+	}
+	.iframeResponsive{
+		width:30%;
+		height:30%;
+	}
+	header{
+		width:100%;
+		height:100%;
+		background-image:url('/pool party/headers.jpg');
+		background-repeat: no-repeat;
+		background-position:left bottom;
+		background-size: cover;
+	}
+	.textoHeaders{
+		color:white;
+		font-weight: bolder;
+		font-size:.9rem;
+		width:100%;
+		height:60vh;
+		display:flex;
+		flex-direction: column;
+		justify-content:center;
+		align-content:center;
+		gap:1.5rem;
+		margin-top:0;
+		padding:5rem;
+	}
+	.textoHeaders p,h1{
+		display:flex;
+		justify-content: start;
+		align-items:start;
+		width:60%;
+		height:auto;
+		background: rgba(0,0,0,.2);
+		backdrop-filter:blur(1px);
+		margin-left:-3rem;
+		
+	}
+	.queEs{
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:1rem;
+		width:100%;
+		height:auto;
+		margin-top:0;
+		background:rgb(0,0,0);
+		padding:0;
+	}
+
+	.queEs h2 , .queEs p,.queEs .iluminacion{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		padding:1rem;
+		width: 90%;
+		font-size: 1.2rem;
+	}
+	.queEs h2{
+		font-size: 1.5rem;
+
+	}
+	.queEs p{
+		margin-left:0 !important;
+	}
+	h2{
+		width:95%;
+		font-size:2rem;	
+	}
+	.sonidoFlores{
+		width:100%;
+		height:100%;
+		background:rgb(0,0,0);
+		
+	}
+	.sonidoFlores img{
+		background-repeat:no-repeat;
+		background-size: cover;
+		width:100%;
+	}
+	.iluminacion{
+		display: flex;
+		justify-content:start;
+		align-items: center;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
+		width:100%;
+		margin-top:0;
+		height:30vh;
+		padding-left:2rem;
+	}
+	.iluminacion h2{
+		width:auto;
+		padding:1rem;
+		text-align: center;
+		margin-left:1rem;
+		font-size: 1.3rem;
+	}
+	.iluminacion a{
+		width:15%;
+		font-size:.9rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		margin-left: 1rem;
+		padding:.3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+	}
+	.bodas{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		width:100%;
+		height:100%;
+	}
+	.bodas img{
+		width:50%;
+		height:auto;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.pantallas-led , .estructura , .techo , .tarimA{
+		width:100%;
+		height:70vh;
+		background-position: center center;
+		padding:1rem;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
+	}
+	.pantallas-led img , .estructura img , .techo img , .tarimA img{
+		background-position:center center;
+		background-size:cover;
+		background-repeat:no-repeat;
+		width:100%;
+		height:100%;
+	}
+	.tarima{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:0;
+	}
+	.tarima h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.bodaS{
+		display:flex;
+		justify-content: start;
+		align-items: center;
+		margin-top:9rem;
+	}
+	.poolParty{
+		margin-top:0;
+	}
+	.conciertos{
+		margin-top:0;
+	}
+	.videos{
+		margin-top:0;
+	}
+	.poolParty h2{
+		color:rgb(153, 193, 218);
+	}
+	.bodaS h2{
+		display: flex;
+		justify-content: start;
+		width:15%;
+		margin-left:3rem;
+	}
+	.sonido-button{
+		display: flex;
+		justify-content:start;
+		width:100%;
+		margin-left:0 !important;
+		padding:2rem;
+	}
+	.sonido-button h2{
+		width:auto;
+		display:flex;
+		text-align:left;
+
+	}
+	.sonido-button a{
+		width:10%;
+		font-size:1.3rem;
+		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		height: 8vh;
+	}
+	.sonido-button a:hover , .iluminacion a:hover{
+		background:rgba(0,41,55,.3);
+		transform:translateY(-4px);
+	}
+	.bodasContainer{
+		display:flex;
+		justify-content:center;
+		align-items:start;
+		gap:2rem;
+		height:auto;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
+	}
+	.conciertosContainer{
+		display:flex;
+		justify-content:center;
+		align-items:start;
+		gap:1rem;
+		height:auto;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));	
+	}
+	.conciertosContainer img{
+		width:48%;
+		height:120vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.bodasContainer img{
+		width:40%;
+		height:70vh;
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+	.video{
+		background:rgb(0, 0, 0);
+		margin-top:0;
+		width: 100%;
+		height:auto;
+		display: flex;
+		flex-wrap: wrap;
+		gap:2rem;
+		padding:2rem;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.contactanos{
+
+	}
+	.video video{
+		width:30%;
+		margin-top: 2rem;
+
+	}
+	footer{
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:2rem;
+		color:white;
+		width: 100%;
+		padding-bottom: 2rem;
+		
+
+	}
+	.redess{
+		width:100%;
+		height: auto;
+		display: flex !important;
+		justify-content: center !important;
+		align-items:center !important;
+		gap:1rem;
+	}
+	.redess div{
+		margin:0 !important;
+	}
+	.redess div a{
+		width: 100%;
+		height:auto;
+		margin:0;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+
+	}
+	.imgRedSocial{
+		width:10%;
+		background-size: cover;
+	}
+	a{ 
+		width:10%;
+	}
+	a:nth-child(1){
+		margin-left:5rem;
+	}
+	.estructurA , .techO{
+		margin-top:0 !important;
+	}
 
 }
 /* Tabletas en orientación horizontal (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
 /* Aquí van tus estilos específicos para móviles grandes */
 nav{
+	display: flex;
+	justify-content:end;
+	align-items: end;
+	padding-top:2rem;
+	padding-right:2rem;
+}
+nav img{
+	width:15%;
+}
+header{
+	width:100%;
+	height:100%;
+	background-image:url('/pool party/headers.jpg');
+	background-repeat: no-repeat;
+	background-position:left bottom;
+	background-size: cover;
+}
+.iframeResponsive{
+	width:25%;
+	height:40%;
+}
+.textoHeaders{
+	color:white;
+	font-weight: bolder;
+	font-size:1rem;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-content:center;
+	gap:1.5rem;
+	margin-top:0;
+	padding:5rem;
+}
+.textoHeaders p,h1{
+	display:flex;
+	justify-content: start;
+	align-items:start;
+	width:40%;
+	height:auto;
+	background: rgba(0,0,0,.2);
+	backdrop-filter:blur(1px);
+}
+.queEs{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:1rem;
+	width:100%;
+	height:auto;
+	margin-top:0;
+	background:rgb(0,0,0);
+	padding:0;
+}
+
+.queEs h2 , .queEs p,.queEs .iluminacion{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding:1rem;
+	width: 90%;
+	font-size: 1.3rem;
+}
+.queEs h2{
+	font-size: 1.5rem;
+
+}
+.queEs p{
+	margin-left:0 !important;
+}
+h2{
+	width:95%;
+	font-size:2rem;	
+}
+.sonidoFlores{
+	width:100%;
+	height:142vh;
+	background:rgb(0,0,0);
+
+}
+.sonidoFlores img{
+	background-repeat:no-repeat;
+	background-size: cover;
+	width:100%;
+}
+.iluminacion{
+	display: flex;
+	justify-content:start;
+	align-items: center;
+	background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
+	width:100%;
+	margin-top:0;
+	height:30vh;
+	padding-left:2rem;
+}
+.iluminacion h2{
+	width:auto;
+	padding:1rem;
+	text-align: center;
+	margin-left:1rem;
+	font-size: 1.6rem;
+}
+.iluminacion a{
+	width:10%;
+	font-size:1rem;
+	color:white;
+	background:rgb(0,41,55);
+	transition:background 1s,transform 1s;
+	cursor:pointer;
+	margin-left: 1rem;
+	padding:.6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.bodas{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:143vh;
+}
+.bodas img{
+	width:50%;
+	height:auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.pantallas-led , .estructura , .techo , .tarimA{
+	width:100%;
+	height:90vh;
+	background-position: center center;
+	padding:1rem;
+	background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
+}
+.pantallas-led img , .estructura img , .techo img , .tarimA img{
+	background-position:center center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	height:100%;
+}
+.tarima{
+	display:flex;
+	justify-content: start;
+	align-items: center;
+	margin-top:0;
+}
+.tarima h2{
+	display: flex;
+	justify-content: start;
+	width:15%;
+	margin-left:3rem;
+}
+.bodaS{
+	display:flex;
+	justify-content: start;
+	align-items: center;
+	margin-top:9rem;
+}
+.poolParty{
+	margin-top:0;
+}
+.conciertos{
+	margin-top:0;
+}
+.videos{
+	margin-top:0;
+}
+.poolParty h2{
+	color:rgb(153, 193, 218);
+}
+.bodaS h2{
+	display: flex;
+	justify-content: start;
+	width:15%;
+	margin-left:3rem;
+}
+.sonido-button{
+	display: flex;
+	justify-content:start;
+	width:100%;
+	
+	margin-left:0 !important;
+	padding:2rem;
+}
+.sonido-button h2{
+	width:auto;
+	display:flex;
+	text-align:left;
+
+}
+.sonido-button a{
+	width:10%;
+	font-size:1.3rem;
+	color:white;
+	background:rgb(0,41,55);
+	transition:background 1s,transform 1s;
+	cursor:pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	height: 8vh;
+}
+.sonido-button a:hover , .iluminacion a:hover{
+	background:rgba(0,41,55,.3);
+	transform:translateY(-4px);
+}
+
+.conciertosContainer{
+	display:flex;
+	justify-content:center;
+	align-items:start;
+	gap:1rem;
+	height:auto;
+	background:rgb(0,0,0);	
+}
+.conciertosContainer img{
+	width:48%;
+	height:120vh;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.bodasContainer{
+	display:flex;
+	justify-content:center;
+	align-items:start;
+	gap:2rem;
+	height:auto;
+	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
+}
+.bodasContainer img{
+	width:45%;
+	height:80vh;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.video{
+	background:rgb(0, 0, 0);
+	margin-top:0;
+	width: 100%;
+	height:auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap:2rem;
+	padding-bottom:8rem;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.contactanos{
+
+}
+.video video{
+	width:30%;
+	margin-top: 2rem;
+	
+}
+footer{
+	background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:2rem;
+	color:white;
+	width: 100%;
+	padding-bottom: 2rem;
+
+}
+.redess{
+		width:100%;
+		height: auto;
+		display: flex !important;
+		justify-content: center !important;
+		align-items:center !important;
+		gap:1rem;
+	}
+	.redess div{
+		margin:0 !important;
+	}
+	.redess div a{
+		width: 100%;
+		height:auto;
+		margin:0;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+
+	}
+	.imgRedSocial{
+		width:8%;
+		background-size: cover;
+	}
+a{ 
+	width:10%;
+}
+a:nth-child(1){
+	margin-left:5rem;
+}
+.estructurA , .techO{
+	margin-top:0 !important;
+}
+
+}
+/* Tabletas grandes o dispositivos pequeños de escritorio (1025px - 1279px) */
+@media (min-width: 1025px) and (max-width: 1279px) {
+	/* Aquí van tus estilos específicos para tabletas grandes o dispositivos pequeños de escritorio */
+	nav{
 		display: flex;
 		justify-content:end;
 		align-items: end;
@@ -41,31 +1622,30 @@ nav{
 	}
 	header{
 		width:100%;
-		height:100vh;
+		height:100%;
 		background-image:url('/pool party/headers.jpg');
 		background-repeat: no-repeat;
 		background-position:left bottom;
 		background-size: cover;
-
 	}
 	.textoHeaders{
 		color:white;
 		font-weight: bolder;
-		font-size:1rem;
+		font-size:1.2rem;
 		width:100%;
-		height:21rem;
+		height:100%;
 		display:flex;
 		flex-direction: column;
 		justify-content:center;
-		align-content:start;
+		align-content:center;
 		gap:1.5rem;
 		margin-top:0;
+		padding:5rem;
 	}
 	.textoHeaders p,h1{
 		display:flex;
 		justify-content: start;
 		align-items:start;
-		margin-left:2rem;
 		width:40%;
 		height:auto;
 	}
@@ -74,18 +1654,32 @@ nav{
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		gap:2.5rem;
+		gap:1rem;
 		width:100%;
-		height:60vh;
+		height:auto;
+		margin-top:0;
 		background:rgb(0,0,0);
+		padding:0;
+	}
+
+	.queEs h2 , .queEs p,.queEs .iluminacion{
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		padding:1rem;
+		width: 90%;
+		font-size: 1.5rem;
+	}
+	.queEs h2{
+		font-size: 1.8rem;
+
 	}
 	.queEs p{
-		width:95%;
-		font-size:1.2rem;
+		margin-left:0 !important;
 	}
 	h2{
 		width:95%;
-		font-size:1.7rem;	
+		font-size:2rem;	
 	}
 	.sonidoFlores{
 		width:100%;
@@ -102,18 +1696,21 @@ nav{
 		display: flex;
 		justify-content:start;
 		align-items: center;
-		background:rgb(0,0,0);
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
 		width:100%;
+		margin-top:0;
 		height:30vh;
+		padding-left:2rem;
 	}
 	.iluminacion h2{
-		width:25%;
+		width:auto;
+		padding:1rem;
 		text-align: center;
 		margin-left:1rem;
 	}
 	.iluminacion a{
 		width:10%;
-		font-size:1rem;
+		font-size:1.1rem;
 		color:white;
 		background:rgb(0,41,55);
 		transition:background 1s,transform 1s;
@@ -141,20 +1738,24 @@ nav{
 	}
 	.pantallas-led , .estructura , .techo , .tarimA{
 		width:100%;
-		height:845px;
+		height:110vh;
+		background-position: center center;
+		padding:2rem;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
 	}
 	.pantallas-led img , .estructura img , .techo img , .tarimA img{
 		background-position:center center;
-		background-size: cover;
-		background-repeat: no-repeat;
+		background-size:cover;
+		background-repeat:no-repeat;
 		width:100%;
-		height:auto;
+		height:100%;
 	}
+
 	.tarima{
 		display:flex;
 		justify-content: start;
 		align-items: center;
-		margin-top:-8rem;
+		margin-top:0;
 	}
 	.tarima h2{
 		display: flex;
@@ -166,22 +1767,22 @@ nav{
 		display:flex;
 		justify-content: start;
 		align-items: center;
-		margin-top:-6rem;
+		margin-top:9rem;
 	}
 	.poolParty{
-		margin-top:-2rem;
+		margin-top:0;
 	}
 	.conciertos{
-		margin-top:-5rem;
+		margin-top:0;
 	}
 	.videos{
-		margin-top:-10rem;
+		margin-top:0;
 	}
 	.poolParty h2{
 		color:rgb(153, 193, 218);
 	}
 	.bodaS h2{
-	display: flex;
+		display: flex;
 		justify-content: start;
 		width:15%;
 		margin-left:3rem;
@@ -190,27 +1791,29 @@ nav{
 		display: flex;
 		justify-content:start;
 		width:100%;
+		margin-left:0 !important;
+		padding:2rem;
 	}
 	.sonido-button h2{
-		width:13%;
-		text-align: center;
-		margin-left:1rem;
+		width:auto;
+		display:flex;
+		text-align:left;
+
 	}
 	.sonido-button a{
 		width:10%;
-		font-size:1rem;
+		font-size:1.3rem;
 		color:white;
+		background:rgb(0,41,55);
+		transition:background 1s,transform 1s;
+		cursor:pointer;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-decoration: none;
-		background:rgb(0,41,55);
-		transition:background 1s,transform 1s;
-		cursor:pointer;
-		margin-left: 1.5rem;
-
+		height: 8vh;
 	}
-	.sonido-button button:hover , .iluminacion button:hover{
+	.sonido-button a:hover , .iluminacion a:hover{
 		background:rgba(0,41,55,.3);
 		transform:translateY(-4px);
 	}
@@ -219,21 +1822,19 @@ nav{
 		justify-content:center;
 		align-items:start;
 		gap:5rem;
-		height:140vh;
-		margin-bottom:3rem;
-		background:rgb(0,0,0);
+		height:auto;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
 	}
 	.conciertosContainer{
-	    display:flex;
+		display:flex;
 		justify-content:center;
 		align-items:start;
 		gap:1rem;
-		height:140vh;
-		margin-bottom:3rem;
+		height:auto;
 		background:rgb(0,0,0);	
 	}
 	.conciertosContainer img{
-        width:48%;
+		width:48%;
 		height:120vh;
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -247,8 +1848,8 @@ nav{
 		background-position: center center;
 	}
 	.video{
-		background: rgb(0, 0, 0);
-		margin-top:-1rem;
+		background:rgb(0, 0, 0);
+		margin-top:0;
 		width: 100%;
 		height:auto;
 		display: flex;
@@ -264,10 +1865,9 @@ nav{
 	.video video{
 		width:30%;
 		margin-top: 2rem;
-		border:7px solid rgb(0, 12, 16);
 	}
 	footer{
-		background:rgb(0,0,0);
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -276,313 +1876,42 @@ nav{
 		color:white;
 		width: 100%;
 		padding-bottom: 2rem;
+
 	}
-	footer div:nth-child(1){
-		width: 100%;
-		display: flex;
-		justify-content: start;
-		gap:2rem;
+	.redess{
+		width:100%;
+		height: auto;
+		display: flex !important;
+		justify-content: center !important;
+		align-items:center !important;
+		gap:1rem;
 	}
-	footer div:nth-child(2){
+	.redess div{
+		margin:0 !important;
+	}
+	.redess div a{
 		width: 100%;
-		text-align: center;
-		font-size:1.2rem;
-		font-weight: bold;
+		height:auto;
+		margin:0;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+
 	}
 	.imgRedSocial{
-		width:30%;
+		width:6%;
 		background-size: cover;
 	}
 	a{ 
-	width:10%;
+		width:10%;
 	}
 	a:nth-child(1){
 		margin-left:5rem;
 	}
 	.estructurA , .techO{
-		margin-top:-18rem!important;
+		margin-top:0 !important;
 	}
-	
 
-}
-/* Tabletas grandes o dispositivos pequeños de escritorio (1025px - 1279px) */
-@media (min-width: 1025px) and (max-width: 1279px) {
-	/* Aquí van tus estilos específicos para tabletas grandes o dispositivos pequeños de escritorio */
-	nav{
-		display: flex;
-		justify-content:end;
-		align-items: end;
-		padding-top:2rem;
-		padding-right:2rem;
-	}
-	nav img{
-		width:15%;
-	}
-	header{
-		width:100%;
-		height:100vh;
-		background-image:url('/pool party/headers.jpg');
-		background-repeat: no-repeat;
-		background-position:left bottom;
-		background-size: cover;
-
-	}
-	.textoHeaders{
-		color:white;
-		font-weight: bolder;
-		font-size:1.2rem;
-		width:100%;
-		height:21rem;
-		display:flex;
-		flex-direction: column;
-		justify-content:center;
-		align-content:start;
-		gap:1.5rem;
-		margin-top:0;
-	}
-	.textoHeaders p,h1{
-		display:flex;
-		justify-content: start;
-		align-items:start;
-		margin-left:2rem;
-		width:40%;
-		height:auto;
-	}
-	.queEs{
-		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap:2.5rem;
-		width:100%;
-		height:60vh;
-		background:rgb(0,0,0);
-	}
-	.queEs p{
-		width:95%;
-		font-size:1.2rem;
-	}
-	h2{
-		width:95%;
-		font-size:2rem;	
-	}
-	.sonidoFlores{
-		width:100%;
-		height:142vh;
-		background:rgb(0,0,0);
-		
-	}
-	.sonidoFlores img{
-		background-repeat:no-repeat;
-		background-size: cover;
-		width:100%;
-	}
-	.iluminacion{
-		display: flex;
-		justify-content:start;
-		align-items: center;
-		background:rgb(0,0,0);
-		width:100%;
-		height:30vh;
-	}
-	.iluminacion h2{
-		width:25%;
-		text-align: center;
-		margin-left:1rem;
-	}
-	.iluminacion a{
-		width:10%;
-		font-size:1.1rem;
-		color:white;
-		background:rgb(0,41,55);
-		transition:background 1s,transform 1s;
-		cursor:pointer;
-		margin-left: 1rem;
-		padding: .6rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-decoration: none;
-	}
-	.bodas{
-		display:flex;
-		justify-content:center;
-		align-items:center;
-		width:100%;
-		height:143vh;
-	}
-	.bodas img{
-		width:50%;
-		height:auto;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-	.pantallas-led , .estructura , .techo , .tarimA{
-		width:100%;
-		height:845px;
-	}
-	.pantallas-led img , .estructura img , .techo img , .tarimA img{
-		background-position:center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		width:100%;
-		height:auto;
-	}
-	.tarima{
-		display:flex;
-		justify-content: start;
-		align-items: center;
-		margin-top:-3rem;
-	}
-	.tarima h2{
-		display: flex;
-		justify-content: start;
-		width:15%;
-		margin-left:3rem;
-	}
-	.bodaS{
-		display:flex;
-		justify-content: start;
-		align-items: center;
-		margin-top:-1rem;
-	}
-	.poolParty{
-		margin-top:-2rem;
-	}
-	.conciertos{
-		margin-top:-5rem;
-	}
-	.videos{
-		margin-top:-10rem;
-	}
-	.poolParty h2{
-		color:rgb(153, 193, 218);
-	}
-	.bodaS h2{
-	display: flex;
-		justify-content: start;
-		width:15%;
-		margin-left:3rem;
-	}
-	.sonido-button{
-		display: flex;
-		justify-content:start;
-		width:100%;
-	}
-	.sonido-button h2{
-		width:13%;
-		text-align: center;
-		margin-left:1rem;
-	}
-	.sonido-button a{
-		width:10%;
-		font-size:1.1rem;
-		color:white;
-		background:rgb(0,41,55);
-		transition:background 1s,transform 1s;
-		cursor:pointer;
-		margin-left: 1.5rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		text-decoration: none;
-	}
-	.sonido-button button:hover , .iluminacion button:hover{
-		background:rgba(0,41,55,.3);
-		transform:translateY(-4px);
-	}
-	.bodasContainer{
-		display:flex;
-		justify-content:center;
-		align-items:start;
-		gap:5rem;
-		height:140vh;
-		margin-bottom:3rem;
-		background:rgb(0,0,0);
-	}
-	.conciertosContainer{
-	    display:flex;
-		justify-content:center;
-		align-items:start;
-		gap:1rem;
-		height:140vh;
-		margin-bottom:3rem;
-		background:rgb(0,0,0);	
-	}
-	.conciertosContainer img{
-        width:48%;
-		height:120vh;
-		background-size:cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-	.bodasContainer img{
-		width:40%;
-		height:120vh;
-		background-size:cover;
-		background-repeat: no-repeat;
-		background-position: center center;
-	}
-	.video{
-		background: rgb(0, 0, 0);
-		margin-top:-1rem;
-		width: 100%;
-		height:auto;
-		display: flex;
-		flex-wrap: wrap;
-		gap:2rem;
-		padding-bottom:8rem;
-		justify-content: space-evenly;
-		align-items: center;
-	}
-	.contactanos{
-
-	}
-	.video video{
-		width:30%;
-		margin-top: 2rem;
-		border:7px solid rgb(0, 12, 16);
-	}
-	footer{
-		background:rgb(0,0,0);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap:2rem;
-		color:white;
-		width: 100%;
-		padding-bottom: 2rem;
-	}
-	footer div:nth-child(1){
-		width: 100%;
-		display: flex;
-		justify-content: start;
-		gap:2rem;
-	}
-	footer div:nth-child(2){
-		width: 100%;
-		text-align: center;
-		font-size:1.2rem;
-		font-weight: bold;
-	}
-	.imgRedSocial{
-		width:30%;
-		background-size: cover;
-	}
-	a{ 
-	width:10%;
-	}
-	a:nth-child(1){
-		margin-left:5rem;
-	}
-	.estructurA{
-		margin-top:-14rem!important;
-	}
-	.techO{
-		margin-top:-14rem!important;
-	}
 }
 /* Dispositivos de pantalla grande (1280px en adelante) */
 @media (min-width: 1280px) {
@@ -599,31 +1928,30 @@ nav{
 	}
 	header{
 		width:100%;
-		height:100vh;
+		height:100%;
 		background-image:url('/pool party/headers.jpg');
 		background-repeat: no-repeat;
 		background-position:left bottom;
 		background-size: cover;
-
 	}
 	.textoHeaders{
 		color:white;
 		font-weight: bolder;
-		font-size:1.5rem;
+		font-size:1.3rem;
 		width:100%;
-		height:30rem;
+		height:100%;
 		display:flex;
 		flex-direction: column;
 		justify-content:center;
 		align-content:center;
 		gap:1.5rem;
-		margin-top: 2rem;
+		margin-top:0;
+		padding:5rem;
 	}
 	.textoHeaders p,h1{
 		display:flex;
 		justify-content: start;
 		align-items:start;
-		margin-left: 2rem;
 		width:40%;
 		height:auto;
 	}
@@ -635,21 +1963,24 @@ nav{
 		gap:2.5rem;
 		width:100%;
 		height:60vh;
+		margin-top:0;
 		background:rgb(0,0,0);
+		padding:3rem;
 	}
 	.queEs p{
 		width:95%;
-		font-size:1.8rem;
+		font-size:1.5rem;
+		margin-bottom: 2rem;
 	}
 	h2{
 		width:95%;
-		font-size:2.5rem;	
+		font-size:2rem;	
 	}
 	.sonidoFlores{
 		width:100%;
-		height:142vh;
+		height:130vh;
 		background:rgb(0,0,0);
-		
+		padding:2rem;	
 	}
 	.sonidoFlores img{
 		background-repeat:no-repeat;
@@ -660,12 +1991,15 @@ nav{
 		display: flex;
 		justify-content:start;
 		align-items: center;
-		background:rgb(0,0,0);
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
 		width:100%;
+		margin-top:0;
 		height:30vh;
+		padding-left:2rem;
 	}
 	.iluminacion h2{
-		width:25%;
+		width:auto;
+		padding:1rem;
 		text-align: center;
 		margin-left:1rem;
 	}
@@ -677,7 +2011,7 @@ nav{
 		transition:background 1s,transform 1s;
 		cursor:pointer;
 		margin-left: 1rem;
-		padding: .6rem;
+		padding:.6rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -699,20 +2033,23 @@ nav{
 	}
 	.pantallas-led , .estructura , .techo , .tarimA{
 		width:100%;
-		height:845px;
+		height:110vh;
+		background-position: center center;
+		padding:2rem;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
 	}
 	.pantallas-led img , .estructura img , .techo img , .tarimA img{
 		background-position:center center;
-		background-size: cover;
-		background-repeat: no-repeat;
+		background-size:cover;
+		background-repeat:no-repeat;
 		width:100%;
-		height:auto;
+		height:100%;
 	}
 	.tarima{
 		display:flex;
 		justify-content: start;
 		align-items: center;
-		margin-top:7rem;
+		margin-top:0;
 	}
 	.tarima h2{
 		display: flex;
@@ -727,19 +2064,19 @@ nav{
 		margin-top:9rem;
 	}
 	.poolParty{
-		margin-top:-2rem;
+		margin-top:0;
 	}
 	.conciertos{
-		margin-top:-5rem;
+		margin-top:0;
 	}
 	.videos{
-		margin-top:-10rem;
+		margin-top:0;
 	}
 	.poolParty h2{
 		color:rgb(153, 193, 218);
 	}
 	.bodaS h2{
-	display: flex;
+		display: flex;
 		justify-content: start;
 		width:15%;
 		margin-left:3rem;
@@ -761,7 +2098,6 @@ nav{
 		background:rgb(0,41,55);
 		transition:background 1s,transform 1s;
 		cursor:pointer;
-		margin-left: 1.5rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -776,21 +2112,19 @@ nav{
 		justify-content:center;
 		align-items:start;
 		gap:5rem;
-		height:140vh;
-		margin-bottom:3rem;
-		background:rgb(0,0,0);
+		height:auto;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
 	}
 	.conciertosContainer{
-	    display:flex;
+		display:flex;
 		justify-content:center;
 		align-items:start;
 		gap:1rem;
-		height:140vh;
-		margin-bottom:3rem;
+		height:auto;
 		background:rgb(0,0,0);	
 	}
 	.conciertosContainer img{
-        width:48%;
+		width:48%;
 		height:120vh;
 		background-size:cover;
 		background-repeat: no-repeat;
@@ -804,8 +2138,8 @@ nav{
 		background-position: center center;
 	}
 	.video{
-		background: rgb(0, 0, 0);
-		margin-top:-1rem;
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
+		margin-top:0;
 		width: 100%;
 		height:auto;
 		display: flex;
@@ -821,10 +2155,9 @@ nav{
 	.video video{
 		width:30%;
 		margin-top: 2rem;
-		border:7px solid rgb(0, 12, 16);
 	}
 	footer{
-		background:rgb(0,0,0);
+		background:-webkit-radial-gradient(left,circle,rgb(0,0,0),rgb(0, 12, 16));
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -833,31 +2166,40 @@ nav{
 		color:white;
 		width: 100%;
 		padding-bottom: 2rem;
+
 	}
-	footer div:nth-child(1){
-		width: 100%;
-		display: flex;
-		justify-content: start;
-		gap:2rem;
+	.redess{
+		width:100%;
+		height: auto;
+		display: flex !important;
+		justify-content: center !important;
+		align-items:center !important;
+		gap:1rem;
 	}
-	footer div:nth-child(2){
+	.redess div{
+		margin:0 !important;
+	}
+	.redess div a{
 		width: 100%;
-		text-align: center;
-		font-size:1.2rem;
-		font-weight: bold;
+		height:auto;
+		margin:0;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+
 	}
 	.imgRedSocial{
-		width:30%;
+		width:7%;
 		background-size: cover;
 	}
 	a{ 
-	width:10%;
+		width:10%;
 	}
 	a:nth-child(1){
 		margin-left:5rem;
 	}
 	.estructurA , .techO{
-		margin-top:-6rem!important;
+		margin-top:0 !important;
 	}
 	
 }

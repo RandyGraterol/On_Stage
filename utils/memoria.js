@@ -8,7 +8,7 @@ const pantallaLed = ['pantalla-01.png','pantalla-02.png','pantalla-03.png','pant
 
 const pool = ['pool-01.jpg','pool-02.jpg','pool-03.jpg','pool-04.jpg','pool-05.jpg','pool-06.jpg'];
 
-const sonido = ['sonido-01.PNG','sonido-02.JPEG','sonido-03.JPEG','sonido-04.JPEG','sonido-05.PNG','sonido-06.PNG','sonido-07.PNG','sonido-08.PNG'];
+const sonido = ['sonido-01.png','sonido-02.jpeg','sonido-03.jpeg','sonido-04.jpeg','sonido-05.png','sonido-06.png','sonido-07.png','sonido-08.png'];
 
 const tarima = ['tarima-01.png','tarima-02.png','tarima-03.png','tarima-04.png'];
 

@@ -5,6 +5,7 @@ dotenv.config();
 const path = require('path');
 const app = express();
 const {PORT} = process.env;
+let port = PORT ? PORT : 3000;
 //Archivos estaticos
 app.use(express.static(path.join(__dirname,'/public')));
 //configuracion de recuperacion de datos y envio 
@@ -17,6 +18,6 @@ app.set('views',path.join(__dirname,'/views'));
 
 app.use('/',router);
 
-app.listen(PORT,()=>{
-console.log(`Servidor corriendo el puerto ${PORT}`);
+app.listen(port,()=>{
+console.log(`Servidor corriendo el puerto ${port}`);
 })

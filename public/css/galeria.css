@@ -42,7 +42,7 @@ header{
 	justify-content:start;
 	align-items: start;
 	padding: 2rem;
-	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0)) 
+	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0));
 }
 header h1{
 	margin-left:2rem;
@@ -88,6 +88,7 @@ header{
 	justify-content:start;
 	align-items: start;
 	padding: 2rem;
+	border:5px solid green;
 	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0)) 
 }
 header h1{
@@ -134,6 +135,7 @@ header{
 	justify-content:start;
 	align-items: start;
 	padding: 2rem;
+	border:5px solid violet;
 	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0)) 
 }
 header h1{
@@ -179,6 +181,7 @@ header{
 	justify-content:start;
 	align-items: start;
 	padding: 2rem;
+	border:5px solid blue;
 	background:-webkit-radial-gradient(center,circle,rgb(0, 12, 16),rgb(0,0,0)) 
 }
 header h1{
