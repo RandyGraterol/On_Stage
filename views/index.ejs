@@ -6,6 +6,9 @@
 	<title>On Stage</title>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="/css/slider.css">
+	<link rel="stylesheet" type="text/css" href="/css/carrusel.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
@@ -37,11 +40,20 @@
 		altamente capacitado y creativo.</p>
 	</section>
 	<div class='iluminacion'>
-			<h2>SONIDO</h2>
-			<a href="/sonido" class='b' data-info='sonido' title='¡¡Haz click aqui!!'>Ver mas</a>
-		</div>
+		<h2>SONIDO</h2>
+		<a href="/sonido" class='b' data-info='sonido' title='¡¡Haz click aqui!!'>Ver mas</a>
+	</div>
+	<!--CARRUSEL-->
 	<section class='techo'>
-		<img src="/sonido/sonido-01.PNG">
+		<div class="slider-container">
+			<div class="slider">
+				<% for(let x = 0 ; x < sonido.length;x++){ %>
+				<div class="slide"><img src="/sonido/<%=sonido[x]%>" alt="Imagen"></div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="moveSlideN(-1)">&#10094;</div>
+			<div class="next" onclick="moveSlideN(1)">&#10095;</div>
+		</div>
 	</section>
 
 	<section class="iluminacion">
@@ -60,7 +72,17 @@
 	</section>
 
 	<section class='pantallas-led'>
-		<img src="/pantallas led/pantalla-14.JPEG">
+
+		<!-----***************AQUIIIIIIIII*******************************--->
+		<div class="slider-container">
+			<div class="slider">
+				<% for(let r = 0 ; r < pantallaLed.length;r++){ %>
+				<div class="slid3"><img src="/pantallas led/<%=pantallaLed[r]%>" alt="Imagen"></div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="moveSliden(-1)">&#10094;</div>
+			<div class="next" onclick="moveSliden(1)">&#10095;</div>
+		</div>
 	</section>
 
 	<section class="iluminacion">
@@ -69,7 +91,15 @@
 	</section>
 
 	<section class="estructura">
-		<img src="/estructura/estructura-01.JPEG">
+		<div class="slider-container">
+			<div class="slider">
+				<% for(let p = 0 ; p < estructura.length;p++){ %>
+				<div class="slid33"><img src="/estructura/<%=estructura[p]%>" alt="Imagen"></div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="moveSlid(-1)">&#10094;</div>
+			<div class="next" onclick="moveSlid(1)">&#10095;</div>
+		</div>
 	</section>
 
 	<section class="iluminacion">
@@ -78,7 +108,15 @@
 	</section>
 
 	<section class="techo">
-		<img src="/techo/techo-01.PNG">
+		<div class="slider-container">
+			<div class="slider">
+				<% for(let t = 0 ; t < techo.length;t++){ %>
+				<div class="slid333"><img src="/techo/<%=techo[t]%>" alt="Imagen"></div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="moveSli(-1)">&#10094;</div>
+			<div class="next" onclick="moveSli(1)">&#10095;</div>
+		</div>
 	</section>
 
 
@@ -88,7 +126,15 @@
 	</section>
 
 	<section class="tarimA">
-		<img src="/tarima/tarima-01.PNG">
+		<div class="slider-container">
+			<div class="slider">
+				<% for(let tt = 0 ; tt < tarima.length;tt++){ %>
+				<div class="slid3333"><img src="/tarima/<%=tarima[tt]%>" alt="Imagen"></div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="moverSlide(-1)">&#10094;</div>
+			<div class="next" onclick="moverSlide(1)">&#10095;</div>
+		</div>
 	</section>
 
 	<section class="iluminacion">
@@ -107,8 +153,8 @@
 	</section>
 
 	<section class="bodasContainer">
-		<img src="/pool party/pool-01.jpg">
-		<img src="/pool party/pool-02.jpg">
+		<img src="/pool party/pool-01.JPG">
+		<img src="/pool party/pool-02.JPG">
 	</section>
 
 	<section class="iluminacion">
@@ -126,8 +172,17 @@
 	</section>
 
 	<section class="video div1">
+
+		<div class="slider-container">
+			<div class="slider iframeSlider">
+				
+			</div>
+			<div class="prev" onclick="moverSliderr(-1)">&#10094;</div>
+			<div class="next" onclick="moverSliderr(1)">&#10095;</div>
+		</div>
 		
 	</section>
+
 
 	<section class="iluminacion">
 		<h2>CONTACTANOS</h2>
@@ -153,5 +208,12 @@
 
 	</footer>
 	<script type="text/javascript" src='/js/insertIframe.js'></script>
+	<script type="text/javascript" src='/js/carrusel.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-01.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-02.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-03.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-04.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-05.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-video.js'></script>
 </body>
 </html>
