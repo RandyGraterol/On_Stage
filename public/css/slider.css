@@ -3,17 +3,20 @@
         }
 
         .slider-container {
-            width: 90%;
+            width:100%;
             height:100%;
             margin: 0 auto;
             position: relative;
+            
         }
 
-        .slider {
-            display: flex;
+        .slider{
+            position: relative;
+            display:flex;
             transition: transform 0.5s ease;
             height:100% !important;
             width:100% !important;
+           
         }
         .slide , .slid3,.slid33,.slid333,.slid3333{
             flex: 0 0 100%;
@@ -26,7 +29,7 @@
             background-position:center center;
             background-attachment: fixed;
         }
-
+        
         .prev, .next {
             position: absolute;
             top: 50%;

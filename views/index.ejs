@@ -6,9 +6,10 @@
 	<title>On Stage</title>
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link rel="stylesheet" type="text/css" href="/css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="/css/slider.css">
 	<link rel="stylesheet" type="text/css" href="/css/carrusel.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="icon" href="/icon/logo.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css">
 </head>
 <body>
 
@@ -41,7 +42,6 @@
 	</section>
 	<div class='iluminacion'>
 		<h2>SONIDO</h2>
-		
 	</div>
 	<!--CARRUSEL-->
 	<section class='techo'>
@@ -58,12 +58,23 @@
 
 	<section class="iluminacion">
 		<h2>ILUMINACIÓN</h2>
-		<a href="/iluminacion" class='b' data-info='iluminacion' title='¡¡Haz click aqui!!'>Ver mas</a>
 	</section>
 
 	<section class="bodasContainer">
-		<img src="/iluminacion/iluminacion-01.JPEG">
-		<img src="/iluminacion/iluminacion-14.JPEG">
+		<div class='slider-container'>
+			<div class="slider">
+				<% for(let z = 0 ; z < iluminacion.length;z++){ %>
+				<div class='sliderIluminacion'>
+					<img src="/iluminacion/<%=iluminacion[z]%>">
+					<% if(z < iluminacion.length - 1){ %>
+					<img src="/iluminacion/<%=iluminacion[z + 1]%>">
+					<% } %>	
+				</div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="mSlideN(-1)">&#10094;</div>
+			<div class="next" onclick="mSlideN(1)">&#10095;</div>
+		</div>
 	</section>
 
 	<section class="iluminacion">
@@ -82,6 +93,7 @@
 			<div class="prev" onclick="moveSliden(-1)">&#10094;</div>
 			<div class="next" onclick="moveSliden(1)">&#10095;</div>
 		</div>
+
 	</section>
 
 	<section class="iluminacion">
@@ -135,32 +147,65 @@
 
 	<section class="iluminacion">
 		<h2>BODAS</h2>
-		<a href='/bodas' class='b' data-info='bodas' title='¡¡Haz click aqui!!'>Ver mas</a>
 	</section>
 
 	<section class="bodasContainer">
-		<img src="/iluminacion/bodas/bodas-01.JPEG">
-		<img src="/iluminacion/bodas/bodas-02.JPEG">
+		<div class='slider-container'>
+			<div class="slider">
+				<% for(let m = 0 ; m < boda.length;m++){ %>
+				<div class='sliderBodas'>
+					<img src="/iluminacion/bodas/<%=boda[m]%>">
+					<% if(m < boda.length - 1){ %>
+					<img src="/iluminacion/bodas/<%=boda[m + 1]%>">
+					<% } %>	
+				</div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="msn(-1)">&#10094;</div>
+			<div class="next" onclick="msn(1)">&#10095;</div>
+		</div>
 	</section>
 
 	<section class="iluminacion">
 		<h2>POOL PARTY</h2>
-		<a href='#' class='b' data-info='pool' title='¡¡Haz click aqui!!'>Ver mas</a>
 	</section>
 
 	<section class="bodasContainer">
-		<img src="/pool party/pool-01.jpg">
-		<img src="/pool party/pool-02.jpg">
+		<div class='slider-container'>
+			<div class="slider">
+				<% for(let q = 0 ; q < pool.length;q++){ %>
+				<div class='sliderPoolParty'>
+					<img src="/pool party/<%=pool[q]%>">
+					<% if(q < pool.length - 1){ %>
+					<img src="/pool party/<%=pool[q + 1]%>">
+					<% } %>	
+				</div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="moviendo(-1)">&#10094;</div>
+			<div class="next" onclick="moviendo(1)">&#10095;</div>
+		</div>
 	</section>
 
 	<section class="iluminacion">
 		<h2>CONCIERTOS</h2>
-		<a href='#' class='b' data-info='conciertos' title='¡¡Haz click aqui!!'>Ver mas</a>
 	</section>
 
 	<section class="bodasContainer">
-		<img src="/conciertos/conciertos-01.JPG">
-		<img src="/conciertos/conciertos-02.PNG">
+		<div class='slider-container'>
+			<div class="slider">
+				<% for(let v = 0 ; v < conciertos.length;v++){ %>
+				<div class='sliderConciertos'>
+					<img src="/conciertos/<%=conciertos[v]%>">
+					<% if(v < conciertos.length - 1){ %>
+					<img src="/conciertos/<%=conciertos[v + 1]%>">
+					<% } %>	
+				</div>
+				<% } %>
+			</div>
+			<div class="prev" onclick="moverT(-1)">&#10094;</div>
+			<div class="next" onclick="moverT(1)">&#10095;</div>
+		</div>
 	</section>
 
 	<section class="iluminacion">
@@ -169,7 +214,7 @@
 
 	<section class="video div1">
 
-		<div class="slider-container">
+		<div class="slider-container videoAncho">
 			<div class="slider iframeSlider">
 				
 			</div>
@@ -180,36 +225,21 @@
 	</section>
 
 
-	<section class="iluminacion">
+	<section class="iluminacion contactos">
 		<h2>CONTACTANOS</h2>
 	</section>
-
-	<footer>
-
-		<div class='redess'>
-
-			<div>
-				<a title='¡¡Haz click aqui!!' href="https://www.instagram.com/onstage.mgta?igsh=MWM2dzczcXJnOTQ3bQ=="><img class='imgRedSocial' src="/icon/instagram.png"></a> 
-			</div>
-
-			<div> 
-				<a title='¡¡Haz click aqui!!' href="https://Wa.me/+584123538503"><img class='imgRedSocial' src="/icon/whatsapp.png"></a>
-			</div>
-
-		</div>
-		<!--------------------------------------------------------------->
-		<div>
-			&copy; Copyright <strong>On Stage</strong>. Todos los Derechos Reservados.
-		</div>
-
-	</footer>
+     <%-include("footer")-%>	
 	<script type="text/javascript" src='/js/insertIframe.js'></script>
-	<script type="text/javascript" src='/js/carrusel.js'></script>
 	<script type="text/javascript" src='/js/Slider/slider-01.js'></script>
 	<script type="text/javascript" src='/js/Slider/slider-02.js'></script>
 	<script type="text/javascript" src='/js/Slider/slider-03.js'></script>
 	<script type="text/javascript" src='/js/Slider/slider-04.js'></script>
 	<script type="text/javascript" src='/js/Slider/slider-05.js'></script>
 	<script type="text/javascript" src='/js/Slider/slider-video.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-iluminacion-01.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-bodas-01.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-pool-01.js'></script>
+	<script type="text/javascript" src='/js/Slider/slider-conciertos-01.js'></script>
+
 </body>
 </html>

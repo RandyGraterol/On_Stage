@@ -16,7 +16,7 @@ let slideIndeX = 1;
 				slideIndeX = slideS.length;
 			}
 
-			for (let i = 0; i < slideS.length; i++) {
+			for (let i = 0; i < slideS.length; i++){
 				slideS[i].style.display = "none";
 			}
 

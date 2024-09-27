@@ -14,9 +14,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  background-image:url('https://assets.nflxext.com/ffe/siteui/vlv3/4d7bb476-6d8b-4c49-a8c3-7739fddd135c/8277debd-f86e-4710-a56f-1d9d0979b2b2/VE-es-20240429-popsignuptwoweeks-perspective_alpha_website_small.jpg');
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+   background-position: center center;
+   background-attachment: fixed;
   padding-bottom:3rem;
 
 }
