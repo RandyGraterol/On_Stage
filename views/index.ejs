@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="icon" href="/icon/logo.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/fullScreen.css">
 </head>
 <body>
 
@@ -48,7 +49,7 @@
 		<div class="slider-container">
 			<div class="slider">
 				<% for(let x = 0 ; x < sonido.length;x++){ %>
-				<div class="slide"><img data-src="/sonido/<%=sonido[x]%>" class='lazy' alt="Imagen"></div>
+				<div class="slide"><img data-src="/sonido/<%=sonido[x]%>" class='lazy clickable' alt="Imagen"></div>
 				<% } %>
 			</div>
 			<div class="prev" onclick="moveSlideN(-1)">&#10094;</div>
@@ -65,9 +66,9 @@
 			<div class="slider">
 				<% for(let z = 0 ; z < iluminacion.length;z++){ %>
 				<div class='sliderIluminacion'>
-					<img data-src="/iluminacion/<%=iluminacion[z]%>" class='lazy'>
+					<img data-src="/iluminacion/<%=iluminacion[z]%>" class='lazy clickable'>
 					<% if(z < iluminacion.length - 1){ %>
-					<img data-src="/iluminacion/<%=iluminacion[z + 1]%>" class='lazy'>
+					<img data-src="/iluminacion/<%=iluminacion[z + 1]%>" class='lazy clickable'>
 					<% } %>	
 				</div>
 				<% } %>
@@ -87,7 +88,7 @@
 		<div class="slider-container">
 			<div class="slider">
 				<% for(let r = 0 ; r < pantallaLed.length;r++){ %>
-				<div class="slid3"><img data-src="/pantallas led/<%=pantallaLed[r]%>" alt="Imagen" class='lazy'></div>
+				<div class="slid3"><img data-src="/pantallas led/<%=pantallaLed[r]%>" alt="Imagen" class='lazy clickable'></div>
 				<% } %>
 			</div>
 			<div class="prev" onclick="moveSliden(-1)">&#10094;</div>
@@ -104,7 +105,7 @@
 		<div class="slider-container">
 			<div class="slider">
 				<% for(let p = 0 ; p < estructura.length;p++){ %>
-				<div class="slid33"><img data-src="/estructura/<%=estructura[p]%>" alt="Imagen" class='lazy'></div>
+				<div class="slid33"><img data-src="/estructura/<%=estructura[p]%>" alt="Imagen" class='lazy clickable'></div>
 				<% } %>
 			</div>
 			<div class="prev" onclick="moveSlid(-1)">&#10094;</div>
@@ -120,7 +121,7 @@
 		<div class="slider-container">
 			<div class="slider">
 				<% for(let t = 0 ; t < techo.length;t++){ %>
-				<div class="slid333"><img data-src="/techo/<%=techo[t]%>" alt="Imagen" class='lazy'></div>
+				<div class="slid333"><img data-src="/techo/<%=techo[t]%>" alt="Imagen" class='lazy clickable'></div>
 				<% } %>
 			</div>
 			<div class="prev" onclick="moveSli(-1)">&#10094;</div>
@@ -137,7 +138,7 @@
 		<div class="slider-container">
 			<div class="slider">
 				<% for(let tt = 0 ; tt < tarima.length;tt++){ %>
-				<div class="slid3333"><img data-src="/tarima/<%=tarima[tt]%>" alt="Imagen" class='lazy'></div>
+				<div class="slid3333"><img data-src="/tarima/<%=tarima[tt]%>" alt="Imagen" class='lazy clickable'></div>
 				<% } %>
 			</div>
 			<div class="prev" onclick="moverSlide(-1)">&#10094;</div>
@@ -154,9 +155,9 @@
 			<div class="slider">
 				<% for(let m = 0 ; m < boda.length;m++){ %>
 				<div class='sliderBodas'>
-					<img data-src="/iluminacion/bodas/<%=boda[m]%>" class='lazy'>
+					<img data-src="/iluminacion/bodas/<%=boda[m]%>" class='lazy clickable'>
 					<% if(m < boda.length - 1){ %>
-					<img data-src="/iluminacion/bodas/<%=boda[m + 1]%>" class='lazy'>
+					<img data-src="/iluminacion/bodas/<%=boda[m + 1]%>" class='lazy clickable'>
 					<% } %>	
 				</div>
 				<% } %>
@@ -175,9 +176,9 @@
 			<div class="slider">
 				<% for(let q = 0 ; q < pool.length;q++){ %>
 				<div class='sliderPoolParty'>
-					<img data-src="/pool party/<%=pool[q]%>" class='lazy'>
+					<img data-src="/pool party/<%=pool[q]%>" class='lazy clickable'>
 					<% if(q < pool.length - 1){ %>
-					<img data-src="/pool party/<%=pool[q + 1]%>" class='lazy'>
+					<img data-src="/pool party/<%=pool[q + 1]%>" class='lazy clickable'>
 					<% } %>	
 				</div>
 				<% } %>
@@ -196,9 +197,9 @@
 			<div class="slider">
 				<% for(let v = 0 ; v < conciertos.length;v++){ %>
 				<div class='sliderConciertos'>
-					<img data-src="/conciertos/<%=conciertos[v]%>" class='lazy'>
+					<img data-src="/conciertos/<%=conciertos[v]%>" class='lazy clickable'>
 					<% if(v < conciertos.length - 1){ %>
-					<img data-src="/conciertos/<%=conciertos[v + 1]%>" class='lazy'>
+					<img data-src="/conciertos/<%=conciertos[v + 1]%>" class='lazy clickable'>
 					<% } %>	
 				</div>
 				<% } %>
@@ -228,8 +229,15 @@
 	<section class="iluminacion contactos">
 		<h2>CONTACTANOS</h2>
 	</section>
-     <%-include("footer")-%>	
-     <script type="text/javascript" src='/js/lazyLoad.js'></script>
+	<%-include("footer")-%>
+	<!--IMAGEN PANTALLA COMPLETA-->
+	<div id="full-screen-image">
+		<button id="close-button">&#10094;</button>
+		<img src="" alt="Fullscreen Image">
+	</div>
+	
+	<script type="text/javascript" src='/js/lazyLoad.js'></script>
+	<script type="text/javascript" src='/js/fullScreen.js'></script>
 	<script type="text/javascript" src='/js/insertIframe.js'></script>
 	<script type="text/javascript" src='/js/Slider/slider-01.js'></script>
 	<script type="text/javascript" src='/js/Slider/slider-02.js'></script>
